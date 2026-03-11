@@ -7,6 +7,8 @@
  * Features: Glassmorphism, Gradients, Animations, Dark Theme
  */
 
+
+import ChatBot from "./components/ChatBot";
 import { useState, useEffect, useRef, useCallback } from "react";
 
 // ─── LUCIDE ICONS (inline SVG to avoid import issues) ───────────────────────
@@ -1586,6 +1588,7 @@ export default function App() {
         {toast && (
           <Toast key={toast.id} message={toast.message} type={toast.type} onClose={() => setToast(null)} />
         )}
+        <ChatBot />
       </div>
     </>
   );
